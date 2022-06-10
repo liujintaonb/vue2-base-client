@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-control" content="no-cache">
+  <meta http-equiv="Cache" content="no-cache">
+  <title>
+    <%= webpackConfig.name %>
+  </title>
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=hsf610eMHFGQRFi1oZeHmhKejRV5o5Wd"></script>
+  <script src="http://api.tianditu.gov.cn/api?v=4.0&tk=001163910f4981cbe5ced093ef7e3019"></script>
+  <style>
+    /* //行政省 */
+    .el-icon-my-xing-zheng-sheng {
+      background: url("./legend/xing-zheng-sheng.ico") center no-repeat
+    }
+
+
+    .el-icon-my-xing-zheng-sheng:before {
+      content: "\8d3a";
+      font-size: 14px;
+      visibility: hidden
+    }
+
+    .el-icon-my-sgbj {
+      background: url("./legend/sgbj.ico") center no-repeat
+    }
+
+    .el-icon-my-sgbj:before {
+      content: "\8d3a";
+      font-size: 14px;
+      visibility: hidden
+    }
+
+    /* //行政市 */
+    .el-icon-my-xing-zheng-shi {
+      background: url("./legend/xing-zheng-shi.ico") center no-repeat
+    }
+
+    .el-icon-my-xing-zheng-shi:before {
+      content: "\8d3a";
+      font-size: 14px;
+      visibility: hidden
+    }
+
+    /* //行政县 */
+    .el-icon-my-xing-zheng-xian {
+      background: url("./legend/xing-zheng-xian.ico") center no-repeat
+    }
+
+    .el-icon-my-xing-zheng-xian:before {
+      content: "\8d3a";
+      font-size: 14px;
+      visibility: hidden
+    }
+
+    /* //居民地 */
+    .el-icon-my-ju-min-di {
+      background: url("./legend/ju-min-di.ico") center no-repeat
+    }
+
+    .el-icon-my-ju-min-di:before {
+      content: "\8d3a";
+      font-size: 14px;
+      visibility: hidden
+    }
+
+    /* //水系 */
+    .el-icon-my-shui-xi {
+      background: url("./legend/shui-xi.ico") center no-repeat
+    }
+
+    .el-icon-my-shui-xi:before {
+      content: "\8d3a";
+      font-size: 14px;
+      visibility: hidden
+    }
+
+    /* //森林分布 */
+    .el-icon-my-sen-lin-fen-bu {
+      background: url("./legend/sen-lin-fen-bu.ico") center no-repeat;
+    }
+
+    .el-icon-my-sen-lin-fen-bu:before {
+      content: "\8d3a";
+      font-size: 14px;
+      visibility: hidden;
+    }
+
+    /* //大样地 */
+    .el-icon-my-da-yang-di {
+      background: url("./legend/da-yang-di.png") center no-repeat;
+    }
+
+    .el-icon-my-da-yang-di:before {
+      content: "\8d3a";
+      font-size: 14px;
+      visibility: hidden;
+    }
+
+    /* 乔木林标准地 */
+    .el-icon-my-biao-zhun-di-qiao-mu {
+      background: url("./legend/bzd-qiao-mu.png") center no-repeat;
+    }
+
+    .el-icon-my-biao-zhun-di-qiao-mu:before {
+      content: "\8d3a";
+      font-size: 14px;
+      visibility: hidden;
+    }
+
+    /* 灌木林标准地 */
+    .el-icon-my-biao-zhun-di-guan-mu {
+      background: url("./legend/bzd-guan-mu.png") center no-repeat;
+    }
+
+    .el-icon-my-biao-zhun-di-guan-mu:before {
+      content: "\8d3a";
+      font-size: 14px;
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but fire-department-survey-client doesn't work properly without JavaScript enabled. Please
+      enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>

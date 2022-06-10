@@ -1,0 +1,79 @@
+{
+  "name": "fire-risk-client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "nodemon --watch vue.config.js --watch mock.config.js --exec vue-cli-service serve",
+    "dev": "nodemon --watch vue.config.js --watch mock.config.js --exec vue-cli-service serve",
+    "dev:pro": "vue-cli-service serve --mode province_production",
+    "test": "vue-cli-service serve --mode test",
+    "build": "vue-cli-service build --mode test",
+    "build-zs": "vue-cli-service build",
+    "build:pro": "vue-cli-service build --mode province_production",
+    "build:zhejiang": "vue-cli-service build --mode zhejiang_production",
+    "build:hebei": "vue-cli-service build --mode hebei_production",
+    "build:hunan": "vue-cli-service build --mode hunan_production",
+    "build:neimeng": "vue-cli-service build --mode neimeng_production",
+    "build:fujian": "vue-cli-service build --mode fujian_production",
+    "build:guizhou": "vue-cli-service build --mode guizhou_production",
+    "build:heilongjiang": "vue-cli-service build --mode heilongjiang_production",
+    "build:qinghai": "vue-cli-service build --mode qinghai_production",
+    "build:hubei": "vue-cli-service build --mode hubei_production",
+    "build:check": "vue-cli-service build --mode check_production",
+    "format": "prettier --write \"**/*.{json,css,md,vue,yml}\" && standard --fix",
+    "lint": "prettier --check '**/*.{json,css,md,vue,yml}' && standard"
+  },
+  "dependencies": {
+    "axios": "0.21.2",
+    "bcryptjs": "2.4.3",
+    "caniuse-lite": "^1.0.30001334",
+    "compression-webpack-plugin": "5.0.1",
+    "core-js": "2.6.11",
+    "dayjs": "1.9.4",
+    "echarts": "4.9.0",
+    "el-table-infinite-scroll": "^2.0.0",
+    "element-ui": "2.13.2",
+    "file-saver": "^2.0.5",
+    "fundebug-javascript": "^2.4.2",
+    "fundebug-vue": "0.0.1",
+    "lodash": "4.17.21",
+    "mathjs": "^10.6.0",
+    "ol": "6.12.0",
+    "prettier": "2.1.2",
+    "qrcodejs2": "0.0.2",
+    "standard": "16.0.1",
+    "vue": "2.6.12",
+    "vue-router": "3.4.4",
+    "xlsx": "^0.17.5"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "3.12.1",
+    "@vue/cli-plugin-eslint": "3.12.1",
+    "@vue/cli-service": "3.12.1",
+    "@vue/eslint-config-standard": "4.0.0",
+    "babel-eslint": "10.1.0",
+    "docx-loader": "1.0.4",
+    "element-theme-chalk": "2.13.2",
+    "eslint": "5.16.0",
+    "eslint-plugin-html": "5.0.5",
+    "eslint-plugin-vue": "5.2.3",
+    "mockjs": "1.1.0",
+    "node-sass": "4.14.1",
+    "nodemon": "2.0.6",
+    "sass-loader": "8.0.2",
+    "stylus": "0.54.8",
+    "stylus-loader": "3.0.2",
+    "uglifyjs-webpack-plugin": "2.2.0",
+    "vue-template-compiler": "2.6.12",
+    "webpack": "4.44.2"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
